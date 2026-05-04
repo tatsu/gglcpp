@@ -1,0 +1,35 @@
+# Claude Code local settings (personal/machine-specific)
+.claude/settings.local.json
+
+# VS Code local/personal overrides (shared settings.json is intentionally not ignored)
+.vscode/*.code-workspace
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/.ropeproject
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Tool output (if running cpplint/clang-tidy locally against example code)
+compile_commands.json
+.cache/
