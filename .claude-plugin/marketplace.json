@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "gglcpp",
+  "description": "Google C++ Style Guide plugin for Claude Code",
+  "owner": {
+    "name": "Tatsuhiko Arai"
+  },
+  "plugins": [
+    {
+      "name": "gglcpp",
+      "description": "Google C++ Style Guide rules and skill for Claude Code — C++20 naming, headers, classes, RAII, memory safety, and GoogleTest patterns",
+      "author": {
+        "name": "Tatsuhiko Arai"
+      },
+      "category": "development",
+      "source": "./",
+      "homepage": "https://github.com/tatsu/gglcpp",
+      "license": "CC-BY-3.0"
+    }
+  ]
+}

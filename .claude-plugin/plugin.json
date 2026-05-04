@@ -1,0 +1,21 @@
+{
+  "name": "gglcpp",
+  "version": "1.0.0",
+  "description": "Google C++ Style Guide rules and skill for Claude Code — C++20 naming, headers, classes, RAII, memory safety, and GoogleTest patterns",
+  "author": {
+    "name": "Tatsuhiko Arai"
+  },
+  "homepage": "https://github.com/tatsu/gglcpp",
+  "repository": "https://github.com/tatsu/gglcpp",
+  "license": "CC-BY-3.0",
+  "keywords": [
+    "c++",
+    "cpp",
+    "google-style",
+    "rules",
+    "clang-format",
+    "googletest"
+  ],
+  "mcpServers": {},
+  "skills": ["./skills/"]
+}
