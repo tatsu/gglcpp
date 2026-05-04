@@ -152,6 +152,14 @@ This plugin targets **C++20**. C++23 features and non-standard extensions are no
 
 Rules and skill content is derived from the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html), which is licensed under [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/).
 
+The content was based on the following upstream commit (no release tag was available):
+
+| Field | Value |
+|-------|-------|
+| Repository | https://github.com/google/styleguide |
+| Commit | [`3c5c895`](https://github.com/google/styleguide/commit/3c5c895) |
+| Message | Update C++ style guide (#971) |
+
 ---
 
 ## License
