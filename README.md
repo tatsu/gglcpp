@@ -19,7 +19,7 @@ claude plugin marketplace add https://github.com/tatsu/gglcpp
 ### Step 2 — Install the skill
 
 ```bash
-claude plugin install google-cpp-style-guide@gglcpp
+claude plugin install gglcpp@gglcpp
 ```
 
 ### Step 3 — Use the skill
