@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## What This Repository Is
 
 **gglcpp** is a Claude Code plugin that distributes the Google C++ Style Guide as:
-- A **skill** (`skills/google-cpp-style-guide/SKILL.md`) invokable via `/gglcpp:google-cpp-style-guide`
+- **Skills** (`skills/*/SKILL.md`) invokable on demand — style guide reference, testing, build, and review
 - **Rules** (`rules/cpp/*.md`) auto-loaded by Claude Code when C++ files are detected
 
 There is no application code to build or test. All content is Markdown and configuration files.
@@ -13,7 +13,11 @@ There is no application code to build or test. All content is Markdown and confi
 ## Repository Structure
 
 ```
-skills/google-cpp-style-guide/SKILL.md   # Full style guide reference (invoke as a skill)
+skills/
+  google-cpp-style-guide/SKILL.md   # Full style guide reference
+  google-cpp-testing/SKILL.md       # GoogleTest/GMock, fixtures, sanitizers, coverage
+  google-cpp-build/SKILL.md         # CMake build error resolution
+  google-cpp-review/SKILL.md        # Memory safety, concurrency, Google Style review
 rules/cpp/
   coding-style.md   # Naming, headers, scoping, classes, functions — summary rules
   hooks.md          # Hook configs for clang-format, cpplint, clang-tidy
@@ -86,7 +90,7 @@ Since there's no build system, verify changes by:
 # Verify paths: frontmatter is present in all rule files
 grep -L "^paths:" rules/cpp/*.md
 
-# Verify skill frontmatter fields (name: and origin: must both be present)
-grep -L "^name:" skills/google-cpp-style-guide/SKILL.md
-grep -L "^origin:" skills/google-cpp-style-guide/SKILL.md
+# Verify all skill files have required frontmatter (name: and origin: must both be present)
+grep -rL "^name:" skills/*/SKILL.md
+grep -rL "^origin:" skills/*/SKILL.md
 ```

@@ -3,7 +3,7 @@
 A [Claude Code](https://claude.ai/code) plugin that brings the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) into your AI-assisted C++ development workflow.
 
 Includes:
-- **Skill** — comprehensive reference: naming, formatting, headers, classes, functions, feature restrictions
+- **Skills** — invoke on demand: style guide reference, testing patterns, build error resolution, and code review
 - **Rules** — auto-loaded coding style, hooks, patterns, security, and testing guidance for C++ files
 
 ---
@@ -80,13 +80,14 @@ cp -r gglcpp/rules/cpp ~/.claude/rules/gglcpp/cpp
 
 ## What's Included
 
-### Skill
+### Skills
 
-| File | Description |
-|------|-------------|
-| `skills/google-cpp-style-guide/SKILL.md` | Full Google C++ Style Guide reference with examples |
-
-Invoke as `/gglcpp:google-cpp-style-guide` after installing.
+| File | Invoke as | Description |
+|------|-----------|-------------|
+| `skills/google-cpp-style-guide/SKILL.md` | `/gglcpp:google-cpp-style-guide` | Full Google C++ Style Guide reference with examples |
+| `skills/google-cpp-testing/SKILL.md` | `/gglcpp:google-cpp-testing` | GoogleTest/GMock setup, fixtures, mocking, sanitizers, and coverage |
+| `skills/google-cpp-build/SKILL.md` | `/gglcpp:google-cpp-build` | Incremental build error resolution (CMake, cpplint, clang-tidy) |
+| `skills/google-cpp-review/SKILL.md` | `/gglcpp:google-cpp-review` | Code review for memory safety, concurrency, and Google Style compliance |
 
 ### Rules (auto-loaded by Claude Code for C++ files)
 
