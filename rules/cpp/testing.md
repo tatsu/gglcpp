@@ -173,4 +173,6 @@ Place tests adjacent to the code they test, or in a parallel `test/` directory.
 
 ## Reference
 
+See skill `gglcpp:google-cpp-testing` for the full testing reference (fixtures, mocking, sanitizers, coverage, flaky-test guardrails, etc.).
+
 See skill `gglcpp:google-cpp-style-guide` for full coding conventions that apply to test code too (naming, formatting, etc.).
