@@ -716,3 +716,9 @@ Before marking C++ work complete (Google style):
 - [ ] `cpplint` passes with no errors
 - [ ] `clang-format -style=Google` applied
 - [ ] Lines <= 80 characters, 2-space indent, no tabs
+
+## Related Skills
+
+- `gglcpp:google-cpp-testing` — GoogleTest/GMock setup, fixtures, mocking, sanitizers, and coverage
+- `gglcpp:google-cpp-build` — incremental build error resolution (CMake, cpplint, clang-tidy)
+- `gglcpp:google-cpp-review` — code review for memory safety, concurrency, and Google Style compliance

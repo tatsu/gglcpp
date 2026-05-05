@@ -405,6 +405,8 @@ ctest --test-dir build-tsan --output-on-failure
 3. Re-run with a sanitizer build.
 4. Expand to the full suite once the root cause is fixed.
 
-## Reference
+## Related Skills
 
-See skill `gglcpp:google-cpp-style-guide` for full coding conventions (naming, formatting, headers, etc.) that apply to test code as well.
+- `gglcpp:google-cpp-style-guide` — full coding conventions (naming, formatting, headers, etc.) that apply to test code as well
+- `gglcpp:google-cpp-build` — fix build errors before running tests
+- `gglcpp:google-cpp-review` — code review after tests pass
